@@ -1,0 +1,17 @@
+[
+  {"id": "CTRL-001", "domain": "Access Management", "name": "User access provisioning approval", "description": "All new user access requests require documented line-manager approval before provisioning.", "owner": "IT Security", "parent_id": null},
+  {"id": "CTRL-002", "domain": "Access Management", "name": "Quarterly user access review", "description": "System owners review and certify all active user accounts quarterly.", "owner": "IT Security", "parent_id": null},
+  {"id": "CTRL-003", "domain": "Access Management", "name": "Privileged access restriction", "description": "Administrative privileges are restricted to authorized personnel and logged.", "owner": "IT Security", "parent_id": null},
+  {"id": "CTRL-004", "domain": "Change Management", "name": "Change approval board review", "description": "All production changes are reviewed and approved by the CAB before deployment.", "owner": "IT Operations", "parent_id": null},
+  {"id": "CTRL-003", "domain": "Change Management", "name": "Emergency change post-review", "description": "Emergency changes receive retrospective approval within 5 business days.", "owner": "IT Operations", "parent_id": null},
+  {"id": "CTRL-005", "domain": "Change Management", "name": "Segregation of environments", "description": "Development, test, and production environments are logically separated.", "owner": "IT Operations", "parent_id": "CTRL-004"},
+  {"id": "CTRL-006", "domain": "Backup & Recovery", "name": "Daily backup execution", "description": "Critical systems are backed up daily and completion is monitored.", "owner": "Infrastructure", "parent_id": null},
+  {"id": "CTRL-007", "domain": "Backup & Recovery", "name": "Annual restore testing", "description": "Backup restoration is tested at least annually for critical systems.", "owner": "Infrastructure", "parent_id": "CTRL-006"},
+  {"id": "CTRL-008", "name": "Incident escalation procedure", "description": "Security incidents are escalated per the documented severity matrix.", "owner": "SOC", "parent_id": null},
+  {"id": "CTRL-009", "domain": "Incident Management", "name": "Incident log completeness", "description": "All incidents are logged with root cause and resolution details.", "owner": "SOC", "parent_id": null},
+  {"id": "CTRL-010 ", "domain": "Data Protection", "name": "Encryption at rest", "description": "Sensitive data stores are encrypted at rest using approved algorithms.", "owner": "IT Security", "parent_id": null},
+  {"id": "CTRL-011", "domain": "Data Protection", "name": "Data classification labelling", "description": "Information assets are classified and labelled per policy.", "owner": "Data Governance", "parent_id": null},
+  {"id": "CTRL-012", "domain": "Data Protection", "name": "Key management rotation", "description": "Encryption keys are rotated per the key management standard.", "owner": "IT Security", "parent_id": "CTRL-012"},
+  {"id": "CTRL-013", "domain": "Vendor Management", "name": "Third-party security assessment", "description": "Critical vendors undergo security assessment before onboarding.", "owner": "Procurement", "parent_id": null},
+  {"id": "CTRL-014", "domain": "Vendor Management", "name": "Vendor SLA monitoring", "description": "Vendor service levels are monitored against contractual SLAs.", "owner": "Procurement", "parent_id": "CTRL-099"}
+]

@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build & distribution
+ui/dist/
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Environment & secrets
+.env
+.env.*
+*.env
+*.local
+
+# Logs & temp
+*.log
+*.tmp
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Internal scratch notes
+.git_init_notes.txt
