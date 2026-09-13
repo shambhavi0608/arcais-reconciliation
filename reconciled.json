@@ -1,0 +1,132 @@
+[
+  {
+    "id": "CTRL-001",
+    "domain": "Access Management",
+    "name": "User access provisioning approval",
+    "owner": "IT Security",
+    "status": "Complete",
+    "completion": 1.0,
+    "evidence": "Approval workflow screenshots collected, tickets sampled",
+    "assessed_on": "2026-08-15"
+  },
+  {
+    "id": "CTRL-002",
+    "domain": "Access Management",
+    "name": "Quarterly user access review",
+    "owner": "IT Security",
+    "status": "Complete",
+    "completion": 0.85,
+    "evidence": "Q3 certification finalized, sign-offs attached",
+    "assessed_on": "2026-08-28"
+  },
+  {
+    "id": "CTRL-004",
+    "domain": "Change Management",
+    "name": "Change approval board review",
+    "owner": "IT Operations",
+    "status": "In Progress",
+    "completion": 0.4,
+    "evidence": "CAB minutes for July pending",
+    "assessed_on": "2026-08-05"
+  },
+  {
+    "id": "CTRL-005",
+    "domain": "Change Management",
+    "name": "Segregation of environments",
+    "owner": "IT Operations",
+    "status": "In Progress",
+    "completion": 0.3,
+    "evidence": "Environment diagram drafted",
+    "assessed_on": "2026-08-21"
+  },
+  {
+    "id": "CTRL-006",
+    "domain": "Backup & Recovery",
+    "name": "Daily backup execution",
+    "owner": "Infrastructure",
+    "status": "Complete",
+    "completion": 1.0,
+    "evidence": "Backup job logs for 30 days verified",
+    "assessed_on": "2025-08-16"
+  },
+  {
+    "id": "CTRL-007",
+    "domain": "Backup & Recovery",
+    "name": "Annual restore testing",
+    "owner": "Infrastructure",
+    "status": "Complete",
+    "completion": 0.2,
+    "evidence": null,
+    "assessed_on": "2026-08-22"
+  },
+  {
+    "id": "CTRL-008",
+    "domain": "Unspecified",
+    "name": "Incident escalation procedure",
+    "owner": "SOC",
+    "status": "In Progress",
+    "completion": 0.5,
+    "evidence": "Severity matrix v2 in review",
+    "assessed_on": "2026-08-19"
+  },
+  {
+    "id": "CTRL-009",
+    "domain": "Incident Management",
+    "name": "Incident log completeness",
+    "owner": "SOC",
+    "status": "In Progress",
+    "completion": 0.25,
+    "evidence": "Initial incident sample pulled",
+    "assessed_on": "2026-09-02"
+  },
+  {
+    "id": "CTRL-010",
+    "domain": "Data Protection",
+    "name": "Encryption at rest",
+    "owner": "IT Security",
+    "status": "In Progress",
+    "completion": 0.7,
+    "evidence": "Encryption inventory 70% complete",
+    "assessed_on": "2026-08-25"
+  },
+  {
+    "id": "CTRL-011",
+    "domain": "Data Protection",
+    "name": "Data classification labelling",
+    "owner": "Data Governance",
+    "status": "Complete",
+    "completion": 1.0,
+    "evidence": "Classification labels applied to all repositories",
+    "assessed_on": "2030-01-01"
+  },
+  {
+    "id": "CTRL-012",
+    "domain": "Data Protection",
+    "name": "Key management rotation",
+    "owner": "IT Security",
+    "status": "In Progress",
+    "completion": 0.5,
+    "evidence": "Rotation schedule drafted",
+    "assessed_on": "2026-08-26"
+  },
+  {
+    "id": "CTRL-013",
+    "domain": "Vendor Management",
+    "name": "Third-party security assessment",
+    "owner": "Procurement",
+    "status": "Complete",
+    "completion": 1.0,
+    "evidence": "Vendor assessments done for Alpha, Beta and Gamma Corp",
+    "assessed_on": "2026-08-27"
+  },
+  {
+    "id": "CTRL-014",
+    "domain": "Vendor Management",
+    "name": "Vendor SLA monitoring",
+    "owner": "Procurement",
+    "status": "Not Started",
+    "completion": 0.0,
+    "evidence": null,
+    "assessed_on": "2026-08-27"
+  }
+]

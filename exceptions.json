@@ -1,0 +1,92 @@
+[
+  {
+    "type": "missing_domain",
+    "control_id": "CTRL-008",
+    "reason": "control CTRL-008 ('Incident escalation procedure') has no 'domain' field in controls.json; left as 'Unspecified'"
+  },
+  {
+    "type": "control_id_whitespace",
+    "control_id": "CTRL-010",
+    "reason": "controls.json id 'CTRL-010 ' had leading/trailing whitespace; normalized to 'CTRL-010'"
+  },
+  {
+    "type": "duplicate_control_id",
+    "control_id": "CTRL-003",
+    "reason": "CTRL-003 is used for 2 different controls in controls.json: ['Privileged access restriction', 'Emergency change post-review']. Cannot determine which definition an assessment result for CTRL-003 is meant to certify -- excluded from reconciled.json."
+  },
+  {
+    "type": "self_referencing_parent",
+    "control_id": "CTRL-012",
+    "reason": "CTRL-012 lists itself as its own parent_id; treated as parent_id=null"
+  },
+  {
+    "type": "dangling_parent_reference",
+    "control_id": "CTRL-014",
+    "reason": "CTRL-014 has parent_id='CTRL-099' which does not exist in controls.json; treated as parent_id=null"
+  },
+  {
+    "type": "date_normalization",
+    "control_id": "CTRL-002",
+    "reason": "row 3: date given as D/M/Y; assumed DD/MM/YYYY (ambiguous format)"
+  },
+  {
+    "type": "status_completion_mismatch",
+    "control_id": "CTRL-002",
+    "reason": "row 4: status is 'Complete' but completion is 0.85 -- logically inconsistent, flagged for reviewer (kept status as recorded)"
+  },
+  {
+    "type": "date_normalization",
+    "control_id": "CTRL-004",
+    "reason": "row 6: date given in 'Mon D YYYY' text format; parsed directly"
+  },
+  {
+    "type": "malformed_control_id_format",
+    "control_id": "CTRL-005",
+    "reason": "assessment_results.xlsx row 8: control_id was entered as bare number 5 instead of 'CTRL-005'; normalized automatically"
+  },
+  {
+    "type": "date_normalization",
+    "control_id": "CTRL-006",
+    "reason": "row 9: assessed_on was a raw unix timestamp (not an Excel date), not a normal Excel date serial; converted assuming UTC seconds"
+  },
+  {
+    "type": "suspicious_assessment_date",
+    "control_id": "CTRL-006",
+    "reason": "row 9: assessed_on (2025-08-16) is before the engagement window started (2026-01-01) -- likely a wrong-year timestamp (e.g. unix time converted off by a year), review before trusting"
+  },
+  {
+    "type": "status_completion_mismatch",
+    "control_id": "CTRL-007",
+    "reason": "row 10: status is 'Complete' but completion is 0.2 -- logically inconsistent, flagged for reviewer (kept status as recorded)"
+  },
+  {
+    "type": "completion_normalization",
+    "control_id": "CTRL-009",
+    "reason": "row 12: completion was missing/N-A; inferred 0.0 from status=Not Started"
+  },
+  {
+    "type": "suspicious_assessment_date",
+    "control_id": "CTRL-011",
+    "reason": "row 14: assessed_on (2030-01-01) is after the engagement window (2026-09-30) -- looks like a data-entry error, review before trusting"
+  },
+  {
+    "type": "duplicate_assessment_resolved",
+    "control_id": "CTRL-002",
+    "reason": "CTRL-002 had 2 assessment submissions (rows [3, 4], dates ['2026-08-15', '2026-08-28']); kept the latest by assessed_on (row 4, 2026-08-28)"
+  },
+  {
+    "type": "duplicate_assessment_resolved",
+    "control_id": "CTRL-005",
+    "reason": "CTRL-005 had 2 assessment submissions (rows [7, 8], dates ['2026-08-20', '2026-08-21']); kept the latest by assessed_on (row 8, 2026-08-21)"
+  },
+  {
+    "type": "duplicate_assessment_resolved",
+    "control_id": "CTRL-009",
+    "reason": "CTRL-009 had 2 assessment submissions (rows [12, 19], dates ['2026-08-19', '2026-09-02']); kept the latest by assessed_on (row 19, 2026-09-02)"
+  },
+  {
+    "type": "orphan_assessment",
+    "control_id": "CTRL-021",
+    "reason": "assessment_results.xlsx has 1 row(s) for CTRL-021, which does not exist in controls.json"
+  }
+]
