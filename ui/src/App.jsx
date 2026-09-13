@@ -267,6 +267,9 @@ export default function App() {
                           const patch = { status: newStatus }
                           if (newStatus === 'Not Started') patch.completion = 0
                           if (newStatus === 'Complete') patch.completion = 1
+                          if (newStatus === 'In Progress') {
+                            patch.completion = (c.completion > 0 && c.completion < 1) ? c.completion : 0.5
+                          }
                           updateControl(c.id, patch)
                         }}
                       >
